@@ -1,21 +1,21 @@
 {
-  "name": "test-nestjs-react",
+  "name": "api",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/test-nestjs-react/src",
+  "sourceRoot": "apps/api/src",
   "projectType": "application",
   "targets": {
     "serve": {
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "test-nestjs-react:build"
+        "buildTarget": "api:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "test-nestjs-react:build:development"
+          "buildTarget": "api:build:development"
         },
         "production": {
-          "buildTarget": "test-nestjs-react:build:production"
+          "buildTarget": "api:build:production"
         }
       }
     }
